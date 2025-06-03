@@ -11,6 +11,10 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Login onLogin={() => setLoggedIn(true)} />} />
+        <Route path="/register" element={<Register onRegister={() => setLoggedIn(true)} />} />
+        <Route path="/dashboard" element={loggedIn ? <Dashboard onLogout={() => setLoggedIn(false)} /> : <Navigate to="/" />} />
+      </Routes>
+    </Router>
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={loggedIn ? <Dashboard onLogout={() => setLoggedIn(false)} /> : <Navigate to="/" />} />
       </Routes>

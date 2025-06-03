@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 
+export default function Register({ onRegister }) {
 export default function Register() {
+
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -15,6 +17,7 @@ export default function Register() {
       body: JSON.stringify({ username, password })
     });
     if (res.ok) {
+      if (onRegister) onRegister();
       navigate('/dashboard');
     } else {
       const data = await res.json();
@@ -24,6 +27,7 @@ export default function Register() {
 
   return (
     <div className="form-container">
+      <div className="logo">🔒</div>
       <h2>Register</h2>
       {error && <p className="error">{error}</p>}
       <form onSubmit={handleSubmit}>

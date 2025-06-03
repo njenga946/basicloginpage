@@ -1,50 +1,64 @@
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  background: linear-gradient(135deg, #141e30 0%, #243b55 100%);
+  color: #eee;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .form-container {
-.login-container {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(30, 30, 30, 0.9);
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   width: 320px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.logo {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .form-container h2 {
-
-.login-container h2 {
   text-align: center;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .form-container label {
-
-.login-container label {
   display: block;
   margin-bottom: 5px;
+  color: #ddd;
 }
 
 .form-container input {
-
-.login-container input[type="text"],
-.login-container input[type="password"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #555;
   border-radius: 4px;
+  background-color: #222;
+  color: #eee;
 }
 
 .form-container button {
-
-.login-container button {
   width: 100%;
   padding: 12px;
   background-color: #4CAF50;
@@ -53,6 +67,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s;
 }
 
 .form-container button:hover {
@@ -60,24 +75,28 @@ body {
 }
 
 .error {
-  color: red;
+  color: #ff8080;
   text-align: center;
   margin-bottom: 10px;
 }
 
 .dashboard-container {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(30, 30, 30, 0.9);
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   text-align: center;
+  color: #fff;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .dashboard-container button {
   margin-top: 20px;
   padding: 10px 20px;
-}
-
-.login-container button:hover {
-  background-color: #45a049;
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }

@@ -5,6 +5,7 @@ This project uses [React](https://react.dev/) and [Vite](https://vitejs.dev/) to
 ## Getting started
 
 Install the dependencies and start the React development server:
+
 # React Login Page
 
 This project uses [React](https://react.dev/) and [Vite](https://vitejs.dev/) to render a simple login form.
@@ -12,6 +13,7 @@ This project uses [React](https://react.dev/) and [Vite](https://vitejs.dev/) to
 ## Getting started
 
 Install the dependencies and start the development server:
+
 
 ```bash
 npm install
@@ -48,9 +50,11 @@ The server serves the `dist/` files on `http://localhost:3000` and exposes
    Netlify. The workflow passes `--no-build` to the Netlify CLI so the deploy
    step does not attempt to run the build command again.
 
+
 4. Every push to `main` will trigger the workflow in `.github/workflows/netlify.yml` to build and deploy the site.
    The workflow installs dependencies with `npm install` since the project does
    not include a `package-lock.json`.
+
 
 If the workflow logs show it is waiting for authorization, verify that the secrets are set correctly in your repository settings.
 
@@ -101,3 +105,4 @@ Render offers a similar approach for static sites:
 2. From the dashboard, click **New Static Site** and connect your GitHub repo.
 3. No build command is needed; set the publish directory to `/`.
 4. Hit **Create Static Site** and Render will deploy your login page with its own URL.
+

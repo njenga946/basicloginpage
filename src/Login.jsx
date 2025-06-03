@@ -25,6 +25,7 @@ export default function Login({ onLogin }) {
 
   return (
     <div className="form-container">
+      <div className="logo">🔒</div>
       <h2>Login</h2>
       {error && <p className="error">{error}</p>}
       <form onSubmit={handleSubmit}>
