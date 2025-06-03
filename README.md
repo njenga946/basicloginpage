@@ -27,6 +27,8 @@ The optimized files will be generated in the `dist/` folder.
 2. Set the **build command** to `npm run build` and **publish directory** to `dist`.
 3. Add repository secrets `NETLIFY_AUTH_TOKEN` and `NETLIFY_SITE_ID` for the GitHub workflow.
 4. Every push to `main` will trigger the workflow in `.github/workflows/netlify.yml` to build and deploy the site.
+   The workflow installs dependencies with `npm install` since the project does
+   not include a `package-lock.json`.
 
 If the workflow logs show it is waiting for authorization, verify that the secrets are set correctly in your repository settings.
 
