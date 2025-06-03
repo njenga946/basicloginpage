@@ -1,0 +1,23 @@
+{
+  "name": "basicloginpage",
+  "version": "1.0.0",
+  "description": "React login page",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.17.0",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
+  },
+  "devDependencies": {
+    "vite": "^5.0.10",
+    "@vitejs/plugin-react": "^4.1.0"
+  }
+}
+
