@@ -9,6 +9,7 @@ body {
 }
 
 .form-container {
+.login-container {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 30px;
   border-radius: 10px;
@@ -17,16 +18,23 @@ body {
 }
 
 .form-container h2 {
+
+.login-container h2 {
   text-align: center;
   margin-bottom: 20px;
 }
 
 .form-container label {
+
+.login-container label {
   display: block;
   margin-bottom: 5px;
 }
 
 .form-container input {
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -35,6 +43,8 @@ body {
 }
 
 .form-container button {
+
+.login-container button {
   width: 100%;
   padding: 12px;
   background-color: #4CAF50;
@@ -66,4 +76,8 @@ body {
 .dashboard-container button {
   margin-top: 20px;
   padding: 10px 20px;
+}
+
+.login-container button:hover {
+  background-color: #45a049;
 }
