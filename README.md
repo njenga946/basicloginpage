@@ -1,3 +1,4 @@
+# basicloginpage
 # React Authentication Example
 
 This project uses [React](https://react.dev/) and [Vite](https://vitejs.dev/) to render a small authentication demo with login, registration and a protected dashboard. A tiny Node/Express server stores users in `users.txt`.
