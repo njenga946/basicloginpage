@@ -1,10 +1,10 @@
-# React Login Page
+# React Authentication Example
 
-This project uses [React](https://react.dev/) and [Vite](https://vitejs.dev/) to render a simple login form.
+This project uses [React](https://react.dev/) and [Vite](https://vitejs.dev/) to render a small authentication demo with login, registration and a protected dashboard. A tiny Node/Express server stores users in `users.txt`.
 
 ## Getting started
 
-Install the dependencies and start the development server:
+Install the dependencies and start the React development server:
 
 ```bash
 npm install
@@ -20,6 +20,16 @@ npm run build
 ```
 
 The optimized files will be generated in the `dist/` folder.
+
+To test the full application with the Node server (which stores users in
+`users.txt`), build the project and then run:
+
+```bash
+npm start
+```
+
+The server serves the `dist/` files on `http://localhost:3000` and exposes
+`/register`, `/login`, `/dashboard-data` and `/logout` endpoints.
 
 ## Deploying to Netlify
 
