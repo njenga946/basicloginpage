@@ -16,6 +16,7 @@ export default function Register({ onRegister }) {
     });
     if (res.ok) {
       if (onRegister) onRegister();
+      alert('Registered successfully!');
       navigate('/dashboard');
     } else {
       const data = await res.json();
